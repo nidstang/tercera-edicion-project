@@ -1,0 +1,92 @@
+{
+  "color": {
+    "button": {
+      "background": {
+        "primary": {
+          "default": {
+            "value": "{color.core.background.accent}",
+            "type": "color"
+          },
+          "hover": {
+            "value": "{color.states.background.accent-hover}",
+            "type": "color"
+          },
+          "active": {
+            "value": "{color.states.background.accent-active}",
+            "type": "color"
+          }
+        },
+        "secondary": {
+          "hover": {
+            "value": "{color.states.background.accent-light-hover}",
+            "type": "color"
+          },
+          "active": {
+            "value": "{color.states.background.accent-light-active}",
+            "type": "color"
+          }
+        }
+      },
+      "content": {
+        "primary": {
+          "default": {
+            "value": "{color.core.content.inverse}",
+            "type": "color"
+          },
+          "hover": {
+            "value": "{color.core.content.inverse}",
+            "type": "color"
+          },
+          "active": {
+            "value": "{color.core.content.inverse}",
+            "type": "color"
+          }
+        },
+        "secondary": {
+          "default": {
+            "value": "{color.core.content.accent}",
+            "type": "color"
+          },
+          "hover": {
+            "value": "{color.core.content.accent}",
+            "type": "color"
+          },
+          "active": {
+            "value": "{color.core.content.accent}",
+            "type": "color"
+          }
+        }
+      },
+      "border": {
+        "primary": {
+          "default": {
+            "value": "{color.core.background.accent}",
+            "type": "color"
+          },
+          "hover": {
+            "value": "{color.button.background.primary.hover}",
+            "type": "color"
+          },
+          "active": {
+            "value": "{color.states.background.accent-active}",
+            "type": "color"
+          }
+        },
+        "secondary": {
+          "default": {
+            "value": "{color.core.border.accent}",
+            "type": "color"
+          },
+          "hover": {
+            "value": "{color.core.border.accent}",
+            "type": "color"
+          },
+          "active": {
+            "value": "{color.core.border.accent}",
+            "type": "color"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,414 @@
+{
+  "hero": {
+    "title": {
+      "value": "Hero Title",
+      "type": "text"
+    },
+    "subtitle": {
+      "value": "Hero Subtitle",
+      "type": "text"
+    },
+    "button": {
+      "value": "Hero Button",
+      "type": "text"
+    }
+  },
+  "intro": {
+    "title": {
+      "value": "Intro Title",
+      "type": "text"
+    },
+    "subtitle": {
+      "p1": {
+        "value": "Intro paragraph 1",
+        "type": "text"
+      },
+      "p2": {
+        "value": "Intro paragraph 2",
+        "type": "text"
+      }
+    },
+    "button": {
+      "primary": {
+        "value": "Intro button primary",
+        "type": "text"
+      },
+      "secondary": {
+        "value": "Intro button secondary",
+        "type": "text"
+      }
+    }
+  },
+  "logos": {
+    "title": {
+      "value": "Logos Title",
+      "type": "text"
+    }
+  },
+  "sessions": {
+    "title": {
+      "value": "Sessions title",
+      "type": "text"
+    },
+    "tag": {
+      "one": {
+        "value": "Sessions tag one",
+        "type": "text"
+      },
+      "two": {
+        "value": "Sessions tag two",
+        "type": "text"
+      },
+      "three": {
+        "value": "Sessions tag three",
+        "type": "text"
+      },
+      "four": {
+        "value": "Sessions tag four",
+        "type": "text"
+      },
+      "five": {
+        "value": "Sessions tag five",
+        "type": "text"
+      }
+    },
+    "card": {
+      "one": {
+        "caption": {
+          "value": "Card caption one",
+          "type": "text"
+        },
+        "title": {
+          "value": "Card title one",
+          "type": "text"
+        },
+        "description": {
+          "value": "Card description one",
+          "type": "text"
+        }
+      },
+      "two": {
+        "caption": {
+          "value": "Card caption two",
+          "type": "text"
+        },
+        "title": {
+          "value": "Card title two",
+          "type": "text"
+        },
+        "description": {
+          "value": "Card description two",
+          "type": "text"
+        }
+      },
+      "three": {
+        "caption": {
+          "value": "Card caption three",
+          "type": "text"
+        },
+        "title": {
+          "value": "Card title three",
+          "type": "text"
+        },
+        "description": {
+          "value": "Card description three",
+          "type": "text"
+        }
+      },
+      "four": {
+        "caption": {
+          "value": "Card caption four",
+          "type": "text"
+        },
+        "title": {
+          "value": "Card title four",
+          "type": "text"
+        },
+        "description": {
+          "value": "Card description four",
+          "type": "text"
+        }
+      },
+      "five": {
+        "caption": {
+          "value": "Card caption five",
+          "type": "text"
+        },
+        "title": {
+          "value": "Card title five",
+          "type": "text"
+        },
+        "description": {
+          "value": "Card description five",
+          "type": "text"
+        }
+      },
+      "six": {
+        "caption": {
+          "value": "Card caption six",
+          "type": "text"
+        },
+        "title": {
+          "value": "Card title six",
+          "type": "text"
+        },
+        "description": {
+          "value": "Card description six",
+          "type": "text"
+        }
+      },
+      "seven": {
+        "caption": {
+          "value": "Card caption seven",
+          "type": "text"
+        },
+        "title": {
+          "value": "Card title seven",
+          "type": "text"
+        },
+        "description": {
+          "value": "Card description seven",
+          "type": "text"
+        }
+      },
+      "eight": {
+        "caption": {
+          "value": "Card caption eight",
+          "type": "text"
+        },
+        "title": {
+          "value": "Card title eight",
+          "type": "text"
+        },
+        "description": {
+          "value": "Card description eight",
+          "type": "text"
+        }
+      },
+      "nine": {
+        "caption": {
+          "value": "Card caption nine",
+          "type": "text"
+        },
+        "title": {
+          "value": "Card title nine",
+          "type": "text"
+        },
+        "description": {
+          "value": "Card description nine",
+          "type": "text"
+        }
+      },
+      "ten": {
+        "caption": {
+          "value": "Card caption ten",
+          "type": "text"
+        },
+        "title": {
+          "value": "Card title ten",
+          "type": "text"
+        },
+        "description": {
+          "value": "Card description ten",
+          "type": "text"
+        }
+      }
+    }
+  },
+  "teachers": {
+    "one": {
+      "name": {
+        "value": "Name one",
+        "type": "text"
+      },
+      "position": {
+        "value": "Position one",
+        "type": "text"
+      }
+    },
+    "two": {
+      "name": {
+        "value": "Name two",
+        "type": "text"
+      },
+      "position": {
+        "value": "Position two",
+        "type": "text"
+      }
+    },
+    "title": {
+      "value": "Title teachers",
+      "type": "text"
+    }
+  },
+  "pricing": {
+    "title": {
+      "value": "Pricing title",
+      "type": "text"
+    },
+    "card": {
+      "one": {
+        "caption": {
+          "value": "Caption card one",
+          "type": "text"
+        },
+        "title": {
+          "value": "Title card one",
+          "type": "text"
+        },
+        "price": {
+          "value": "Price",
+          "type": "text"
+        },
+        "description": {
+          "value": "Description card one",
+          "type": "text"
+        },
+        "button": {
+          "value": "Button card one",
+          "type": "text"
+        }
+      },
+      "two": {
+        "caption": {
+          "value": "Caption card two",
+          "type": "text"
+        },
+        "title": {
+          "value": "Title card two",
+          "type": "text"
+        },
+        "price-primary": {
+          "value": "Price",
+          "type": "text"
+        },
+        "price-secondary": {
+          "value": "Price 2",
+          "type": "text"
+        },
+        "description": {
+          "value": "Description card two",
+          "type": "text"
+        },
+        "button": {
+          "value": "Button card two",
+          "type": "text"
+        }
+      },
+      "three": {
+        "caption": {
+          "value": "Caption card three",
+          "type": "text"
+        },
+        "title": {
+          "value": "Title card three",
+          "type": "text"
+        },
+        "description": {
+          "value": "Description card three",
+          "type": "text"
+        },
+        "button": {
+          "value": "Button card three",
+          "type": "text"
+        }
+      }
+    }
+  },
+  "video": {
+    "title": {
+      "value": "Title video",
+      "type": "text"
+    }
+  },
+  "faqs": {
+    "one": {
+      "title": {
+        "value": "Title one",
+        "type": "text"
+      },
+      "description": {
+        "value": "Description one",
+        "type": "text"
+      }
+    },
+    "two": {
+      "title": {
+        "value": "Title two",
+        "type": "text"
+      },
+      "description": {
+        "value": "Description two",
+        "type": "text"
+      }
+    },
+    "three": {
+      "title": {
+        "value": "Title three",
+        "type": "text"
+      },
+      "description": {
+        "value": "Description three",
+        "type": "text"
+      }
+    },
+    "four": {
+      "title": {
+        "value": "Title four",
+        "type": "text"
+      },
+      "description": {
+        "value": "Description four",
+        "type": "text"
+      }
+    },
+    "five": {
+      "title": {
+        "value": "Title five",
+        "type": "text"
+      },
+      "description": {
+        "value": "Description five",
+        "type": "text"
+      }
+    },
+    "six": {
+      "title": {
+        "value": "Title six",
+        "type": "text"
+      },
+      "description": {
+        "value": "Description six",
+        "type": "text"
+      }
+    },
+    "title": {
+      "value": "Title FAQs",
+      "type": "text"
+    }
+  },
+  "footer": {
+    "copyright": {
+      "value": "Copyright © 2025 All rights reserved.",
+      "type": "text"
+    },
+    "link": {
+      "privacy": {
+        "value": "Privacy",
+        "type": "text"
+      },
+      "mail": {
+        "value": "mail",
+        "type": "text"
+      },
+      "linkedin": {
+        "value": "Linkedin",
+        "type": "text"
+      },
+      "substack": {
+        "value": "Substack",
+        "type": "text"
+      }
+    }
+  }
+}

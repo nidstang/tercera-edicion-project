@@ -1,0 +1,206 @@
+{
+  "color": {
+    "core": {
+      "content": {
+        "primary": {
+          "value": "{color.palette.black}",
+          "type": "color"
+        },
+        "secondary": {
+          "value": "{color.palette.mono.700}",
+          "type": "color"
+        },
+        "inverse": {
+          "value": "{color.palette.white}",
+          "type": "color"
+        },
+        "accent": {
+          "value": "{color.palette.mono.800}",
+          "type": "color"
+        }
+      },
+      "background": {
+        "surface": {
+          "value": "{color.palette.white}",
+          "type": "color"
+        },
+        "primary": {
+          "value": "{color.palette.mono.50}",
+          "type": "color"
+        },
+        "secondary": {
+          "value": "{color.palette.mono.50}",
+          "type": "color"
+        },
+        "accent": {
+          "value": "{color.palette.mono.700}",
+          "type": "color"
+        },
+        "accent-light": {
+          "value": "{color.palette.mono.100}",
+          "type": "color"
+        }
+      },
+      "border": {
+        "primary": {
+          "value": "{color.palette.mono.400}",
+          "type": "color"
+        },
+        "accent": {
+          "value": "{color.palette.mono.400}",
+          "type": "color"
+        }
+      }
+    },
+    "states": {
+      "background": {
+        "accent-hover": {
+          "value": "{color.palette.mono.800}",
+          "type": "color"
+        },
+        "accent-light-hover": {
+          "value": "{color.palette.mono.200}",
+          "type": "color"
+        },
+        "accent-active": {
+          "value": "{color.palette.mono.900}",
+          "type": "color"
+        },
+        "accent-light-active": {
+          "value": "{color.palette.mono.300}",
+          "type": "color"
+        }
+      }
+    }
+  },
+  "assets": {
+    "hero": {
+      "bg": {
+        "value": "layout-bg-light.svg",
+        "type": "asset"
+      }
+    },
+    "intro": {
+      "right": {
+        "value": "galaxy-light.svg",
+        "type": "asset"
+      }
+    },
+    "header": {
+      "logo": {
+        "value": "logo-designtokens-es-light.svg",
+        "type": "asset"
+      }
+    },
+    "button": {
+      "link": {
+        "value": "arrow-link-light.svg",
+        "type": "asset"
+      }
+    },
+    "footer": {
+      "logo": {
+        "value": "logo-designtokens-es-white.svg",
+        "type": "asset"
+      }
+    },
+    "logos": {
+      "1": {
+        "value": "Atlassian-logo-light.svg",
+        "type": "asset"
+      },
+      "2": {
+        "value": "google-logo-light.svg",
+        "type": "asset"
+      },
+      "3": {
+        "value": "zendesk-logo-light.svg",
+        "type": "asset"
+      },
+      "4": {
+        "value": "adobe-logo-light.svg",
+        "type": "asset"
+      },
+      "5": {
+        "value": "salesforce-logo-light.svg",
+        "type": "asset"
+      },
+      "6": {
+        "value": "uber-logo-light.svg",
+        "type": "asset"
+      },
+      "placeholder": {
+        "1": {
+          "value": "Atlassian-logo-placeholder-light.svg",
+          "type": "asset"
+        },
+        "2": {
+          "value": "google-logo-placeholder-light.svg",
+          "type": "asset"
+        },
+        "3": {
+          "value": "zendesk-logo-placeholder-light.svg",
+          "type": "asset"
+        },
+        "4": {
+          "value": "adobe-logo-placeholder-light.svg",
+          "type": "asset"
+        },
+        "5": {
+          "value": "salesforce-logo-placeholder-light.svg",
+          "type": "asset"
+        },
+        "6": {
+          "value": "uber-logo-placeholder-light.svg",
+          "type": "asset"
+        }
+      }
+    },
+    "avatar": {
+      "1": {
+        "value": "pablo-fernandez.png",
+        "type": "asset"
+      },
+      "2": {
+        "value": "pablo-peribanez.png",
+        "type": "asset"
+      },
+      "3": {
+        "value": "pablo-garcia.png",
+        "type": "asset"
+      },
+      "4": {
+        "value": "marta-landin.png",
+        "type": "asset"
+      },
+      "5": {
+        "value": "guillermo-adan.png",
+        "type": "asset"
+      },
+      "6": {
+        "value": "rut-galvin.png",
+        "type": "asset"
+      },
+      "7": {
+        "value": "natalia-soria.png",
+        "type": "asset"
+      },
+      "8": {
+        "value": "veronica-aguilar.png",
+        "type": "asset"
+      },
+      "9": {
+        "value": "mar-perez.png",
+        "type": "asset"
+      },
+      "10": {
+        "value": "angela-velasco.png",
+        "type": "asset"
+      },
+      "11": {
+        "value": "sofia-ortiz.png",
+        "type": "asset"
+      }
+    }
+  }
+}
