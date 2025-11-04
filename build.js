@@ -28,6 +28,13 @@ async function run() {
 
   pablo.greet();
 
+  function saludarA(name, lastname) {
+    console.log("Hola " + name + " " + lastname)
+  }
+
+  saludarA("Santi", "Becerra");
+  saludarA("Sheyla");
+
   // console.log(pablo);
 
   // console.log(pablo.name);
