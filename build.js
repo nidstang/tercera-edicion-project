@@ -9,38 +9,33 @@ register(StyleDictionary, {
 const loader = ThemesLoader(StyleDictionary);
 
 async function run() {
-  // this a console.log
-  // const name = "Pablo";
-  // console.log(name);
+  const themes = await loader.load("/tokens")
 
-  const pablo = {
-    name: "Pablo",
-    lastname: "Fernandez",
-    age: 33,
-    isAmazing: true,
-    location: {
-      city: 23,
-      country: "EspañaTrue",
-    },
+  const globalTheme = themes.getThemeByName("global")
 
-    greet: () => console.log('Hola Pablo'),
+  const globalConfig = {
+    platforms: {
+      web: {
+        files: [
+          {
+            format: "css/variables",
+            destination: "app/build/global/variables.css"
+          }
+        ],
+        transforms: [
+          "name/kebab"
+        ]
+      }
+    }
   }
 
-  pablo.greet();
+  globalTheme.addConfig(globalConfig).build()
 
-  function saludarA(name, lastname) {
-    console.log("Hola " + name + " " + lastname)
-  }
 
-  saludarA("Santi", "Becerra");
-  saludarA("Sheyla");
+  // globalTheme.print()
 
-  // console.log(pablo);
+  // themes.print()
 
-  // console.log(pablo.name);
-  // console.log(pablo.lastname);
 }
-
-// tipos de parentesis {  } (  ) [  ]
 
 run();
