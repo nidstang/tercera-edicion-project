@@ -3,72 +3,160 @@
     "core": {
       "content": {
         "primary": {
-          "value": "{color.palette.white}",
-          "type": "color"
+          "$type": "color",
+          "$value": "{color.palette.white}"
         },
         "secondary": {
-          "value": "{color.palette.mono.300}",
-          "type": "color"
+          "$type": "color",
+          "$value": "{color.palette.mono.300}"
         },
         "inverse": {
-          "value": "{color.palette.black}",
-          "type": "color"
+          "$type": "color",
+          "$value": "{color.palette.black}"
         },
         "accent": {
-          "value": "{color.palette.mono.200}",
-          "type": "color"
+          "$type": "color",
+          "$value": "{color.palette.mono.200}"
         }
       },
       "background": {
         "surface": {
-          "value": "{color.palette.black}",
-          "type": "color"
+          "$type": "color",
+          "$value": "{color.palette.black}"
         },
         "primary": {
-          "value": "{color.palette.mono.950}",
-          "type": "color"
+          "$type": "color",
+          "$value": "{color.palette.mono.950}"
         },
         "secondary": {
-          "value": "{color.palette.mono.950}",
-          "type": "color"
+          "$type": "color",
+          "$value": "{color.palette.mono.950}"
         },
         "accent": {
-          "value": "{color.palette.mono.300}",
-          "type": "color"
+          "$type": "color",
+          "$value": "{color.palette.mono.300}"
         },
         "accent-light": {
-          "value": "{color.palette.mono.900}",
-          "type": "color"
+          "$type": "color",
+          "$value": "{color.palette.mono.900}"
         }
       },
       "border": {
         "primary": {
-          "value": "{color.palette.mono.600}",
-          "type": "color"
+          "$type": "color",
+          "$value": "{color.palette.mono.600}"
         },
         "accent": {
-          "value": "{color.palette.mono.500}",
-          "type": "color"
+          "$type": "color",
+          "$value": "{color.palette.mono.500}"
         }
       }
     },
     "states": {
       "background": {
         "accent-hover": {
-          "value": "{color.palette.mono.200}",
-          "type": "color"
+          "$type": "color",
+          "$value": "{color.palette.mono.200}"
         },
         "accent-light-hover": {
-          "value": "{color.palette.mono.800}",
-          "type": "color"
+          "$type": "color",
+          "$value": "{color.palette.mono.800}"
         },
         "accent-active": {
-          "value": "{color.palette.mono.50}",
-          "type": "color"
+          "$type": "color",
+          "$value": "{color.palette.mono.50}"
         },
         "accent-light-active": {
-          "value": "{color.palette.mono.600}",
-          "type": "color"
+          "$type": "color",
+          "$value": "{color.palette.mono.600}"
+        }
+      }
+    },
+    "button": {
+      "background": {
+        "primary": {
+          "default": {
+            "$type": "color",
+            "$value": "{color.core.background.accent}"
+          },
+          "hover": {
+            "$type": "color",
+            "$value": "{color.states.background.accent-hover}"
+          },
+          "active": {
+            "$type": "color",
+            "$value": "{color.states.background.accent-active}"
+          }
+        },
+        "secondary": {
+          "hover": {
+            "$type": "color",
+            "$value": "{color.states.background.accent-light-hover}"
+          },
+          "active": {
+            "$type": "color",
+            "$value": "{color.states.background.accent-light-active}"
+          }
+        }
+      },
+      "content": {
+        "primary": {
+          "default": {
+            "$type": "color",
+            "$value": "{color.core.content.inverse}"
+          },
+          "hover": {
+            "$type": "color",
+            "$value": "{color.core.content.inverse}"
+          },
+          "active": {
+            "$type": "color",
+            "$value": "{color.core.content.inverse}"
+          }
+        },
+        "secondary": {
+          "default": {
+            "$type": "color",
+            "$value": "{color.core.content.accent}"
+          },
+          "hover": {
+            "$type": "color",
+            "$value": "{color.core.content.accent}"
+          },
+          "active": {
+            "$type": "color",
+            "$value": "{color.core.content.accent}"
+          }
+        }
+      },
+      "border": {
+        "primary": {
+          "default": {
+            "$type": "color",
+            "$value": "{color.core.background.accent}"
+          },
+          "hover": {
+            "$type": "color",
+            "$value": "{color.button.background.primary.hover}"
+          },
+          "active": {
+            "$type": "color",
+            "$value": "{color.states.background.accent-active}"
+          }
+        },
+        "secondary": {
+          "default": {
+            "$type": "color",
+            "$value": "{color.core.border.accent}"
+          },
+          "hover": {
+            "$type": "color",
+            "$value": "{color.core.border.accent}"
+          },
+          "active": {
+            "$type": "color",
+            "$value": "{color.core.border.accent}"
+          }
         }
       }
     }
@@ -76,130 +164,130 @@
   "assets": {
     "hero": {
       "bg": {
-        "value": "layout-bg-dark.svg",
-        "type": "asset"
+        "$type": "asset",
+        "$value": "layout-bg-dark.svg"
       }
     },
     "intro": {
       "right": {
-        "value": "galaxy-dark.svg",
-        "type": "asset"
+        "$type": "asset",
+        "$value": "galaxy-dark.svg"
       }
     },
     "header": {
       "logo": {
-        "value": "logo-designtokens-es-dark.svg",
-        "type": "asset"
+        "$type": "asset",
+        "$value": "logo-designtokens-es-dark.svg"
       }
     },
     "button": {
       "link": {
-        "value": "arrow-link-dark.svg",
-        "type": "asset"
+        "$type": "asset",
+        "$value": "arrow-link-dark.svg"
       }
     },
     "footer": {
       "logo": {
-        "value": "logo-designtokens-es-black.svg",
-        "type": "asset"
+        "$type": "asset",
+        "$value": "logo-designtokens-es-black.svg"
       }
     },
     "logos": {
       "1": {
-        "value": "Atlassian-logo-dark.svg",
-        "type": "asset"
+        "$type": "asset",
+        "$value": "Atlassian-logo-dark.svg"
       },
       "2": {
-        "value": "google-logo-dark.svg",
-        "type": "asset"
+        "$type": "asset",
+        "$value": "google-logo-dark.svg"
       },
       "3": {
-        "value": "zendesk-logo-dark.svg",
-        "type": "asset"
+        "$type": "asset",
+        "$value": "zendesk-logo-dark.svg"
       },
       "4": {
-        "value": "adobe-logo-dark.svg",
-        "type": "asset"
+        "$type": "asset",
+        "$value": "adobe-logo-dark.svg"
       },
       "5": {
-        "value": "salesforce-logo-dark.svg",
-        "type": "asset"
+        "$type": "asset",
+        "$value": "salesforce-logo-dark.svg"
       },
       "6": {
-        "value": "uber-logo-dark.svg",
-        "type": "asset"
+        "$type": "asset",
+        "$value": "uber-logo-dark.svg"
       },
       "placeholder": {
         "1": {
-          "value": "Atlassian-logo-placeholder-dark.svg",
-          "type": "asset"
+          "$type": "asset",
+          "$value": "Atlassian-logo-placeholder-dark.svg"
         },
         "2": {
-          "value": "google-logo-placeholder-dark.svg",
-          "type": "asset"
+          "$type": "asset",
+          "$value": "google-logo-placeholder-dark.svg"
         },
         "3": {
-          "value": "zendesk-logo-placeholder-dark.svg",
-          "type": "asset"
+          "$type": "asset",
+          "$value": "zendesk-logo-placeholder-dark.svg"
         },
         "4": {
-          "value": "adobe-logo-placeholder-dark.svg",
-          "type": "asset"
+          "$type": "asset",
+          "$value": "adobe-logo-placeholder-dark.svg"
         },
         "5": {
-          "value": "salesforce-logo-placeholder-dark.svg",
-          "type": "asset"
+          "$type": "asset",
+          "$value": "salesforce-logo-placeholder-dark.svg"
         },
         "6": {
-          "value": "uber-logo-placeholder-dark.svg",
-          "type": "asset"
+          "$type": "asset",
+          "$value": "uber-logo-placeholder-dark.svg"
         }
       }
     },
     "avatar": {
       "1": {
-        "value": "pablo-fernandez.png",
-        "type": "asset"
+        "$type": "asset",
+        "$value": "pablo-fernandez.png"
       },
       "2": {
-        "value": "pablo-peribanez.png",
-        "type": "asset"
+        "$type": "asset",
+        "$value": "pablo-peribanez.png"
       },
       "3": {
-        "value": "pablo-garcia.png",
-        "type": "asset"
+        "$type": "asset",
+        "$value": "pablo-garcia.png"
       },
       "4": {
-        "value": "marta-landin.png",
-        "type": "asset"
+        "$type": "asset",
+        "$value": "marta-landin.png"
       },
       "5": {
-        "value": "guillermo-adan.png",
-        "type": "asset"
+        "$type": "asset",
+        "$value": "guillermo-adan.png"
       },
       "6": {
-        "value": "rut-galvin.png",
-        "type": "asset"
+        "$type": "asset",
+        "$value": "rut-galvin.png"
       },
       "7": {
-        "value": "natalia-soria.png",
-        "type": "asset"
+        "$type": "asset",
+        "$value": "natalia-soria.png"
       },
       "8": {
-        "value": "veronica-aguilar.png",
-        "type": "asset"
+        "$type": "asset",
+        "$value": "veronica-aguilar.png"
       },
       "9": {
-        "value": "mar-perez.png",
-        "type": "asset"
+        "$type": "asset",
+        "$value": "mar-perez.png"
       },
       "10": {
-        "value": "angela-velasco.png",
-        "type": "asset"
+        "$type": "asset",
+        "$value": "angela-velasco.png"
       },
       "11": {
-        "value": "sofia-ortiz.png",
-        "type": "asset"
+        "$type": "asset",
+        "$value": "sofia-ortiz.png"
       }
     }
   }
