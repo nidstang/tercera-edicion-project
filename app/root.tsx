@@ -16,12 +16,11 @@ import appStylesHref from "./app.scss?url";
 // descomentar cuando se generen las variables de dimensiones
 // import desktopVariablesHref from './build/desktop/variables.css?url';
 // import mobileVariablesHref from './build/mobile/variables.css?url';
-// import globalVariablesHref from './build/global/variables.css?url';
+import globalVariablesHref from './build/global/variables.css?url';
 
 // borrar cuando se generen las variables de dimensiones
 const desktopVariablesHref = '';
 const mobileVariablesHref = '';
-const globalVariablesHref = '';
 
 export const links: Route.LinksFunction = () => [
   { rel: "preconnect", href: "https://fonts.googleapis.com" },
@@ -33,7 +32,7 @@ export const links: Route.LinksFunction = () => [
   {
     rel: "stylesheet",
     href: "https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap",
-  },
+  }
 ];
 
 export async function clientAction({ request }: Route.ClientActionArgs) {
