@@ -6,6 +6,8 @@ register(StyleDictionary, {
   withSDBuiltins: false,
 });
 
+console.log();
+
 StyleDictionary.registerTransform({
   name: "assets/background",
   type: "value",
