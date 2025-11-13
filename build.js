@@ -15,6 +15,25 @@ StyleDictionary.registerTransform({
   transform: (token) => `url("/app/assets/${token.$value}")`,
 })
 
+// StyleDictionary.registerFormat({
+//   name: 'json/translations',
+//   format: ({ dictionary }) => {
+//     const extractValues = (obj) => {
+//       if (obj && typeof obj === 'object' && obj.$value !== undefined) {
+//         return obj.$value;
+//       }
+//       const result = {};
+//       for (const key in obj) {
+//         if (obj.hasOwnProperty(key)) {
+//           result[key] = extractValues(obj[key]);
+//         }
+//       }
+//       return result;
+//     };
+//     return JSON.stringify(extractValues(dictionary.tokens), null, 2);
+//   }
+// });
+
 const loader = ThemesLoader(StyleDictionary);
 
 async function run() {
@@ -27,6 +46,9 @@ async function run() {
   const darkTheme = themes.getThemeByName("dark")
   const mobileTheme = themes.getThemeByName("mobile");
   const desktopTheme = themes.getThemeByName("desktop");
+  const esTheme = themes.getThemeByName("es");
+  const enTheme = themes.getThemeByName("en");
+
 
   const globalConfig = {
     // log: {
@@ -106,6 +128,38 @@ async function run() {
     }
   }
 
+  const esConfig = {
+    platforms: {
+      web: {
+        files: [
+          {
+            format: "json/nested",
+            destination: "app/build/es/texts.json"
+          }
+        ],
+        transforms: [
+          'name/kebab'
+        ]
+      }
+    }
+  }
+
+    const enConfig = {
+    platforms: {
+      web: {
+        files: [
+          {
+            format: "json/nested",
+            destination: "app/build/en/texts.json"
+          }
+        ],
+        transforms: [
+          'name/kebab'
+        ]
+      }
+    }
+  }
+
   /**
    * El fichero se tiene que crear en
   la ruta: app/build/android/dimens.xml
@@ -180,6 +234,8 @@ async function run() {
   darkTheme.addConfig(darkConfig).build()
   desktopTheme.addConfig(desktopConfig).build();
   mobileTheme.addConfig(mobileConfig).build();
+  esTheme.addConfig(esConfig).build();
+  enTheme.addConfig(enConfig).build();
 
 
   // globalTheme.print()

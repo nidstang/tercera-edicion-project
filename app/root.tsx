@@ -44,14 +44,14 @@ export async function loader({ request }: Route.LoaderArgs) {
   const url = new URL(request.url);
   let texts = null;
 
-  texts = await import('./texts.json');
+  // texts = await import('./texts.json');
 
   // descomentar cuando se generen los copies
-  // if (url.pathname === '/en') {
-  //   texts = await import('./build/en/texts.json');
-  // } else {
-  //   texts = await import('./build/es/texts.json');
-  // }
+   if (url.pathname === '/en') {
+     texts = await import('./build/en/texts.json');
+   } else {
+     texts = await import('./build/es/texts.json');
+   }
 
   return { texts };
 }
