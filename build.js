@@ -6,6 +6,12 @@ register(StyleDictionary, {
   withSDBuiltins: false,
 });
 
+StyleDictionary.registerTransform({
+  name: "assets/background",
+  type: "value",
+  filter: (token) => token.$type === "asset",
+  transform: (token) => `url("/app/assets/${token.$value}")`,
+})
 
 const loader = ThemesLoader(StyleDictionary);
 
@@ -16,6 +22,9 @@ async function run() {
 
   const globalTheme = themes.getThemeByName("global")
   const lightTheme = themes.getThemeByName("light");
+  const darkTheme = themes.getThemeByName("dark")
+  const mobileTheme = themes.getThemeByName("mobile");
+  const desktopTheme = themes.getThemeByName("desktop");
 
   const globalConfig = {
     // log: {
@@ -30,6 +39,58 @@ async function run() {
           {
             format: "css/variables",
             destination: "app/build/global/variables.css"
+          }
+        ],
+        transforms: [
+          "name/kebab",
+          "ts/resolveMath",
+          "size/pxToRem",
+          "ts/typography/fontWeight",
+          "ts/size/lineheight"
+        ]
+      },
+    }
+  }
+
+    const desktopConfig = {
+    // log: {
+    //   verbosity: 'verbose'
+    // },
+    expand: {
+      typesMap: true
+    },
+    platforms: {
+      web: {
+        files: [
+          {
+            format: "css/variables",
+            destination: "app/build/desktop/variables.css"
+          }
+        ],
+        transforms: [
+          "name/kebab",
+          "ts/resolveMath",
+          "size/pxToRem",
+          "ts/typography/fontWeight",
+          "ts/size/lineheight"
+        ]
+      },
+    }
+  }
+
+    const mobileConfig = {
+    // log: {
+    //   verbosity: 'verbose'
+    // },
+    expand: {
+      typesMap: true
+    },
+    platforms: {
+      web: {
+        files: [
+          {
+            format: "css/variables",
+            destination: "app/build/mobile/variables.css"
           }
         ],
         transforms: [
@@ -77,20 +138,46 @@ async function run() {
         files: [
           {
             format: "css/variables",
-            destination: "app/build/light/variables.css"
+            destination: "app/build/light/variables.css",
+            options: {
+              selector: ".light"
+            }
           }
         ],
         transforms: [
-          'name/kebab',
+          "name/kebab",
+          "assets/background"
         ]
       },
     }
   }
 
+    const darkConfig = {
+    platforms: {
+      web: {
+        files: [
+          {
+            format: "css/variables",
+            destination: "app/build/dark/variables.css",
+            options: {
+              selector: ".dark"
+            }
+          }
+        ],
+        transforms: [
+          "name/kebab",
+          "assets/background"
+        ]
+      },
+    }
+  }
 
   globalTheme.addConfig(globalConfig).build()
   // globalTheme.addConfig(androidConfig).build()
   lightTheme.addConfig(lightConfig).build()
+  darkTheme.addConfig(darkConfig).build()
+  desktopTheme.addConfig(desktopConfig).build();
+  mobileTheme.addConfig(mobileConfig).build();
 
 
   // globalTheme.print()

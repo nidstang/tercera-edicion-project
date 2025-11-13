@@ -3,7 +3,7 @@
 @use "../node_modules/bulma/sass/layout";
 @use "../node_modules/bulma/sass/helpers";
 // descomentar cuando se generen las variables de colores
-// @import "./build/dark/variables.css";
+@import "./build/dark/variables.css";
 @import "./build/light/variables.css";
 
 

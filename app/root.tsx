@@ -14,13 +14,11 @@ import type { Route } from "./+types/root";
 import appStylesHref from "./app.scss?url";
 
 // descomentar cuando se generen las variables de dimensiones
-// import desktopVariablesHref from './build/desktop/variables.css?url';
-// import mobileVariablesHref from './build/mobile/variables.css?url';
+import desktopVariablesHref from './build/desktop/variables.css?url';
+import mobileVariablesHref from './build/mobile/variables.css?url';
 import globalVariablesHref from './build/global/variables.css?url';
 
 // borrar cuando se generen las variables de dimensiones
-const desktopVariablesHref = '';
-const mobileVariablesHref = '';
 
 export const links: Route.LinksFunction = () => [
   { rel: "preconnect", href: "https://fonts.googleapis.com" },
